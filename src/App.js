@@ -6,7 +6,7 @@ import Header from "./components/Header";
 
 function App() {
   const [messages, setMessages] = useState([]);
-  const BACKEND_URL = process.env.BACKEND_URL;
+  const BACKEND_URL = "https://basebook-backend.onrender.com/messages";
 
   const fetchMessages = async () => {
     try {
