@@ -2,6 +2,12 @@
   padding: 0 20%;
   padding-bottom: 20px;
 }
+.send-timer {
+  position: absolute;
+  color: rgb(219, 75, 75);
+  left: 20px;
+  bottom: 20px;
+}
 .pos-relative {
   position: relative;
 }
@@ -225,5 +231,9 @@
   .nav-container {
     flex-direction: column;
     gap: 20px;
+  }
+  .send-timer {
+    left: 10px;
+    bottom: 20px;
   }
 }

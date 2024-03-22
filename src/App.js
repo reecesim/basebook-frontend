@@ -40,7 +40,7 @@ function App() {
 
     const interval = setInterval(() => {
       fetchMessages(); // Fetch messages every 6 seconds
-    }, 1000);
+    }, 1500);
 
     // Clean up function to clear the interval when component unmounts
     return () => clearInterval(interval);
