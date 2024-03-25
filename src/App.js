@@ -8,6 +8,7 @@ import Ad2 from "./assets/img/ads/BaseBook 2.png";
 import Ad3 from "./assets/img/ads/BaseBook 3.png";
 import Ad4 from "./assets/img/ads/BaseBook 4.png";
 import Ad5 from "./assets/img/ads/BaseBook 5.png";
+import SplashScreen from "./components/SplashScreen";
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -69,6 +70,7 @@ function App() {
         <img src={Ad5} alt="Number 1 social-fi on BASE" />
         <img src={Ad3} alt="Zuck's Looksmaxxing routine goes horribly wrong" />
       </div>
+      <SplashScreen></SplashScreen>
     </div>
   );
 }
