@@ -9,6 +9,7 @@ const SplashScreen = () => {
 
   const hideSplashScreen = () => {
     setIsVisible(false);
+    window.scrollTo(0, 0); // Reset scroll position to the top
   };
 
   return (
