@@ -3,6 +3,11 @@ import axios from "axios";
 import ChatContainer from "./components/ChatContainer";
 import ThemeToggler from "./components/ThemeToggler";
 import Header from "./components/Header";
+import Ad1 from "./assets/img/ads/BaseBook.png";
+import Ad2 from "./assets/img/ads/BaseBook 2.png";
+import Ad3 from "./assets/img/ads/BaseBook 3.png";
+import Ad4 from "./assets/img/ads/BaseBook 4.png";
+import Ad5 from "./assets/img/ads/BaseBook 5.png";
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -52,6 +57,17 @@ function App() {
       <div className="wrapper">
         <ChatContainer messages={messages} sendMessage={sendMessage} />
         <ThemeToggler />
+      </div>
+      <div className="sidebar sidebar-left">
+        <a href="/" rel="noopener" target="_blank">
+          <img src={Ad1} alt="Basebook arousing tokenomics" />
+        </a>
+        <img src={Ad2} alt="Basebook members capture SBF and deliver justice" />
+      </div>
+      <div className="sidebar sidebar-right">
+        <img src={Ad4} alt="Zuck leaked snapchats" />
+        <img src={Ad5} alt="Number 1 social-fi on BASE" />
+        <img src={Ad3} alt="Zuck's Looksmaxxing routine goes horribly wrong" />
       </div>
     </div>
   );
