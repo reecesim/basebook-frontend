@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SplashBrand from "../assets/img/splash/brand.png";
 import ComingSoon from "../assets/img/splash/comingsoon.png";
 import CursedGif from "../assets/img/splash/cursedgif.gif";
@@ -6,19 +6,6 @@ import GoBtn from "../assets/img/splash/Gobtn.png";
 
 const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    if (isVisible) {
-      document.body.classList.add("nooverflow");
-    } else {
-      document.body.classList.remove("nooverflow");
-    }
-
-    // Cleanup function to remove the class when component unmounts
-    return () => {
-      document.body.classList.remove("nooverflow");
-    };
-  }, [isVisible]);
 
   const hideSplashScreen = () => {
     setIsVisible(false);

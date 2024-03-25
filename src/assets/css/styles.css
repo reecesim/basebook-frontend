@@ -344,6 +344,9 @@ a.header-link.tg {
   }
 }
 @media (max-width: 760px) {
+  .splash-screen {
+    display: none;
+  }
   .padding-20 {
     padding: 15px;
   }
