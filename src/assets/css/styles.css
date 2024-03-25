@@ -3,6 +3,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.nooverflow {
+  overflow: hidden;
+}
 .bluecolor {
   color: #3d549e;
 }
